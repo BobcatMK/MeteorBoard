@@ -1,0 +1,10 @@
+<template name="playersList">
+    {{#if allPlayers}}
+        <br />
+        {{#each allPlayers}}    
+            <div class="players-added">{{this.name}}: {{this.height}}cm - ${{this.income}}</div>
+        {{/each}}
+    {{else}}
+        <p>There aren't any players</p>
+    {{/if}}
+</template>

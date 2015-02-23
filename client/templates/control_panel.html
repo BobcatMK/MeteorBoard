@@ -1,0 +1,23 @@
+<template name="controlPanel">
+    {{#if currentUser}}
+        <br />
+        {{#if countPlayers}}
+            {{isSelected}}
+        {{/if}}
+        <form id="add_player">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="playerName">
+            <br />
+            <label for="height">Height</label>
+            <input id="height" type="text" name="playerHeight">
+            <br />
+            <label for="income">Income</label>
+            <input id="income" type="text" name="playerIncome">
+            <br />
+            <input type="submit" value="Add Player">
+        </form>
+    {{else}}
+        <div>Create new account to use this app!</div>
+    {{/if}}
+
+</template>

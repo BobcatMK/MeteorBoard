@@ -21,3 +21,9 @@
 //     // code to run on server at startup
 //   });
 // }
+
+playersList = new Mongo.Collection("players");
+
+if (Meteor.isClient) {
+
+}
